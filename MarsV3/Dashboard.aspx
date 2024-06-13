@@ -1,85 +1,196 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="MarsV3.dashboard" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dash.Master" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="MarsV3.Dashboard" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <nav>
+     <div class="nav-wrapper green darken-3">
+         <a href="Login.aspx" class="brand-logo"></a>
+         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+         <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a href="Login.aspx">log out</a></li>
+         </ul>
+     </div>
+ </nav>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-<!DOCTYPE html>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-            <link rel="stylesheet" type="text/css" href="css/style.css">
 
-</head>
-<body>
-    <form id="form1" runat="server">
-        <nav class="sticky-nav">
-            <ul>
-                <li><a href="Dashboard.aspx">Dashboard</a></li>
-                <li><a href="AirQuality.aspx">Air Quality</a></li>
-                <li><a href="Temperature.aspx">Temperature</a></li>
-                <li><a href="Light.aspx">Light</a></li>
-                <li><a href="Humidity.aspx">Humidity</a></li>
-                <li><a href="Moisture.aspx">Moisture</a></li>
-                <li><a href="SolarPanel.aspx">Solar Panel</a></li>
-                <li><a href="Settings.aspx">Settings</a></li>
-                <li><a href="Login.aspx">Logout</a></li>
-            </ul>
-        </nav>
-          <div id="content">
+   
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12 m3 l4">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="center-align">
+                        <span class="card-title green-text">Air Quality</span>
+                        <span class="blue-text text-darken-2">Controllable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m3 l4">
+                <div class="card">
+                    <div class="card-content">
+
+                        <div class="center-align">
+                            <span class="card-title green-text">Temperature</span>
+                            <span class="blue-text text-darken-2">15c</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+                    <div class="col s12 m3 l4">
+            <div class="card">
+                <div class="card-content">
+
+                    <div class="center-align">
+                        <span class="card-title green-text">Light</span>
+                        <span class="blue-text text-darken-2">Good quaility</span>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
             
-                    <center>
-        
- <div class="card">
-    <div class="card-header">
-        <asp:Label ID="Label1" runat="server" Text="Air Quality"></asp:Label>
-    </div>
-    <div class="card-body">
-        <asp:Label ID="Label2" runat="server" Text="All good"></asp:Label>
-    </div>
-</div>
+                    <div class="col s12 m3 l4">
+            <div class="card">
+                <div class="card-content">
 
-                   
- <div class="card">
-    <div class="card-header">
-        <asp:Label ID="Label3" runat="server" Text="Temperature"></asp:Label>
-    </div>
-    <div class="card-body">
-        <asp:Label ID="Label4" runat="server" Text="All good"></asp:Label>
-    </div>
-</div>
-            <center>
-        
- <div class="card">
-    <div class="card-header">
-        <asp:Label ID="Label5" runat="server" Text="Humidity"></asp:Label>
-    </div>
-    <div class="card-body">
-        <asp:Label ID="Label6" runat="server" Text="All good"></asp:Label>
-    </div>
-</div>
-
-                            <center>
-        
- <div class="card">
-    <div class="card-header">
-        <asp:Label ID="Label7" runat="server" Text="Moisture"></asp:Label>
-    </div>
-    <div class="card-body">
-        <asp:Label ID="Label8" runat="server" Text="All good"></asp:Label>
-    </div>
-</div>
-
-                                            <center>
-        
- <div class="card">
-    <div class="card-header">
-        <asp:Label ID="Label9" runat="server" Text="Solar Panel"></asp:Label>
-    </div>
-    <div class="card-body">
-        <asp:Label ID="Label10" runat="server" Text="All good"></asp:Label>
-    </div>
-</div>
-                                                </div>
+                    <div class="center-align">
+                        <span class="card-title green-text">Humidity</span>
+                        <span class="blue-text text-darken-2">30%</span>
+                    </div>
 
 
-    </form>
-</body>
-</html>
+
+                </div>
+            </div>
+        </div>
+
+
+
+                          <div class="col s12 m3 l4">
+      <div class="card">
+          <div class="card-content">
+
+              <div class="center-align">
+                  <span class="card-title green-text">Solar Pane</span>
+                  <span class="blue-text text-darken-2">Capacity 30%</span>
+              </div>
+
+
+
+          </div>
+      </div>
+  </div>
+
+         
+
+
+
+            
+                          <div class="col s12 m3 l4">
+      <div class="card">
+          <div class="card-content">
+
+              <div class="center-align">
+                  <span class="card-title green-text">Moisture</span>
+                  <span class="blue-text text-darken-2">Good</span>
+              </div>
+
+
+
+          </div>
+      </div>
+  </div>
+
+           
+
+
+
+
+            <div class="col s12" style="margin-top: 20px;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Air Quality</th>
+                            <th>Temperature</th>
+                            <th>Light</th>
+                            <th>Humidity</th>
+                            <th>Moisture</th>
+                            <th>Solar Panel</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2024-04-01</td>
+                            <td>Controllable</td>
+                            <td>39C</td>
+                            <td>Good quality</td>
+                            <td>30%</td>
+                            <td>Sun is too hot here</td>
+                            <td>not sun</td>
+                        </tr>
+                        <tr>
+                            <td>2024-04-01</td>
+                            <td>Controllable</td>
+                            <td>39C</td>
+                            <td>Good quality</td>
+                            <td>30%</td>
+                            <td>Sun is too hot here</td>
+                            <td>not sun</td>
+                        </tr>
+                        <tr>
+                            <td>2024-04-02</td>
+                            <td>Controllable</td>
+                            <td>37C</td>
+                            <td>Good quality</td>
+                            <td>35%</td>
+                            <td>Sun is too hot here</td>
+                            <td>not sun</td>
+                        </tr>
+                        <tr>
+                            <td>2024-04-01</td>
+                            <td>Controllable</td>
+                            <td>39C</td>
+                            <td>Good quality</td>
+                            <td>30%</td>
+                            <td>Sun is too hot here</td>
+                            <td>not sun</td>
+                        </tr>
+                        <tr>
+                            <td>2024-04-02</td>
+                            <td>Controllable</td>
+                            <td>37C</td>
+                            <td>Good quality</td>
+                            <td>35%</td>
+                            <td>Sun is too hot here</td>
+                            <td>not sun</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+</asp:Content>

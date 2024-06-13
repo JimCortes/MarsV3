@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dash.master.cs" Inherits="MarsV3.Dash" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+     <script src="js/materialize.min.js"></script>
+
+    <form id="form1" runat="server">
+        <div>
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+               </div>
+                        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view" >
+                    <div class="email">
+                        <img src="img/marts.png" alt="" class="circle">
+                        <span class="blue-text email">useremail@example.com</span>
+<asp:Button ID="Button1" runat="server" Text="Log out" CssClass="waves-effect waves-light btn-small white-text red" OnClick="Button1_Click" />
+                    </div>
+                    </div>
+            </li>
+             <li><a href="<%= GetRouteUrl("Dashboard", null) %>"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li><a href="<%= GetRouteUrl("AirQuality", null) %>"><i class="material-icons">cloud</i>Air Quality</a></li>
+            <li><a href="<%= GetRouteUrl("Temperature", null) %>"><i class="material-icons">wb_sunny</i>Temperature</a></li>
+            <li><a href="<%= GetRouteUrl("Light", null) %>"><i class="material-icons">light_mode</i>Light</a></li>
+            <li><a href="<%= GetRouteUrl("Humidity", null) %>"><i class="material-icons">water_drop</i>Humidity</a></li>
+            <li><a href="<%= GetRouteUrl("Moisture", null) %>"><i class="material-icons">grass</i>Moisture</a></li>
+            <li><a href="<%= GetRouteUrl("SolarPanel", null) %>"><i class="material-icons">solar_power</i>Solar Panel</a></li>
+            <li><a href="<%= GetRouteUrl("Settings", null) %>"><i class="material-icons">settings</i>Settings</a></li>
+       
+            
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons green-text">menu</i></a>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+   
+            
+            
+            
+            </asp:ContentPlaceHolder>
+       
+    </form>
+
+
+</body>
+        <script>   
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems, {});
+            });
+        </script>
+</html>

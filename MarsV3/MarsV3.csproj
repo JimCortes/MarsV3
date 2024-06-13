@@ -67,37 +67,53 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AirQuality.aspx" />
+    <Content Include="About.aspx" />
+    <Content Include="air.aspx" />
     <Content Include="CreateAccount.aspx" />
-    <Content Include="css\loginStyle.css" />
-    <Content Include="css\style.css" />
+    <Content Include="css\customCss.css" />
+    <Content Include="css\materialize.css" />
+    <Content Include="css\materialize.min.css" />
     <Content Include="Dashboard.aspx" />
+    <Content Include="Faqs.aspx" />
     <Content Include="ForgotPassword.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Humidity.aspx" />
     <Content Include="IMG\logo.png" />
+    <Content Include="IMG\marts.png" />
+    <Content Include="IMG\Picture1.jpg" />
+    <Content Include="js\materialize.js" />
+    <Content Include="js\materialize.min.js" />
     <Content Include="Light.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Moisture.aspx" />
     <Content Include="Settings.aspx" />
-    <Content Include="Signup.aspx" />
+    <Content Include="SignUp.aspx" />
     <Content Include="SolarPanel.aspx" />
+    <Content Include="table.aspx" />
     <Content Include="Temperature.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AirQuality.aspx.cs">
-      <DependentUpon>AirQuality.aspx</DependentUpon>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AirQuality.aspx.designer.cs">
-      <DependentUpon>AirQuality.aspx</DependentUpon>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CreateAccount.aspx.cs">
-      <DependentUpon>CreateAccount.aspx</DependentUpon>
+    <Compile Include="air.aspx.cs">
+      <DependentUpon>air.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CreateAccount.aspx.designer.cs">
-      <DependentUpon>CreateAccount.aspx</DependentUpon>
+    <Compile Include="air.aspx.designer.cs">
+      <DependentUpon>air.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dash.Master.cs">
+      <DependentUpon>Dash.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dash.Master.designer.cs">
+      <DependentUpon>Dash.Master</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
@@ -106,12 +122,15 @@
     <Compile Include="Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ForgotPassword.aspx.cs">
-      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    <Compile Include="Faqs.aspx.cs">
+      <DependentUpon>Faqs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ForgotPassword.aspx.designer.cs">
-      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    <Compile Include="Faqs.aspx.designer.cs">
+      <DependentUpon>Faqs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Humidity.aspx.cs">
       <DependentUpon>Humidity.aspx</DependentUpon>
@@ -141,6 +160,28 @@
     <Compile Include="Moisture.aspx.designer.cs">
       <DependentUpon>Moisture.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RouteConfig.cs" />
+    <Compile Include="CreateAccount.aspx.cs">
+      <DependentUpon>CreateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.aspx.designer.cs">
+      <DependentUpon>CreateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MastersForms.Master.cs">
+      <DependentUpon>MastersForms.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MastersForms.Master.designer.cs">
+      <DependentUpon>MastersForms.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.aspx.cs">
       <DependentUpon>Settings.aspx</DependentUpon>
@@ -149,12 +190,12 @@
     <Compile Include="Settings.aspx.designer.cs">
       <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Signup.aspx.cs">
-      <DependentUpon>Signup.aspx</DependentUpon>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Signup.aspx.designer.cs">
-      <DependentUpon>Signup.aspx</DependentUpon>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="SolarPanel.aspx.cs">
       <DependentUpon>SolarPanel.aspx</DependentUpon>
@@ -162,6 +203,13 @@
     </Compile>
     <Compile Include="SolarPanel.aspx.designer.cs">
       <DependentUpon>SolarPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="table.aspx.cs">
+      <DependentUpon>table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="table.aspx.designer.cs">
+      <DependentUpon>table.aspx</DependentUpon>
     </Compile>
     <Compile Include="Temperature.aspx.cs">
       <DependentUpon>Temperature.aspx</DependentUpon>
@@ -172,6 +220,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MastersForms.Master" />
+    <Content Include="Dash.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -1,59 +1,70 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SolarPanel.aspx.cs" Inherits="MarsV3.SolarPanel" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-                        <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-                                              <nav class="sticky-nav">
-      <ul>
-          <li><a href="Dashboard.aspx">Dashboard</a></li>
-          <li><a href="AirQuality.aspx">Air Quality</a></li>
-          <li><a href="Temperature.aspx">Temperature</a></li>
-          <li><a href="Light.aspx">Light</a></li>
-          <li><a href="Humidity.aspx">Humidity</a></li>
-          <li><a href="Moisture.aspx">Moisture</a></li>
-          <li><a href="SolarPanel.aspx">Solar Panel</a></li>
-          <li><a href="Settings.aspx">Settings</a></li>
-            <li><a href="Login.aspx">Logout</a></li>
-      </ul>
-  </nav>
-                <div id="content">
-            
-            <center>
-        
- <div class="card">
-    <div class="card-header">
-        <asp:Label ID="Label1" runat="server" Text="Solar Panel"></asp:Label>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dash.Master" AutoEventWireup="true" CodeBehind="SolarPanel.aspx.cs" Inherits="MarsV3.SolarPanel" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+                    <nav>
+    <div class="nav-wrapper green darken-3">
+        <a href="Login.aspx" class="brand-logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="Login.aspx">log out</a></li>
+        </ul>
     </div>
-    <div class="card-body">
-        <asp:Label ID="Label2" runat="server" Text="Clean"></asp:Label>
-    </div>
-</div>
+</nav>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+               <div class="container">
 
-            </center>
 
-    
-            <div>
-            <br />
-            <center>
-                <asp:Table ID="History" runat="server" Style="margin: 3px; border-width: 1px; width: 700px; border-style: solid; border-width: 1px;">
-                    <asp:TableHeaderRow>
-                        <asp:TableHeaderCell>Date</asp:TableHeaderCell>
-                        <asp:TableHeaderCell>Value</asp:TableHeaderCell>
-                    </asp:TableHeaderRow>
-                </asp:Table>
-
-            </center>
+    <div class="col s12 m3 l4">
+        <div class="card center-align">
+            <div class="card-content">
+                <div class="center-align">
+                <span class="card-title green-text">Solar Panel</span>
+                <span class="blue-text text-darken-2">Capacity 30% </span>
+                </div>
+            </div>
         </div>
-    
     </div>
-    
-    </form>
-</body>
-</html>
+
+
+<div class="col s12" style="margin-top: 20px;">
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Solar Panel</th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>2024-04-01</td>
+            <td>Capacity 30%</td>
+            
+        </tr>
+        <tr>
+            <td>2024-04-01</td>
+            <td>Capacity 50%</td>
+            
+        </tr>
+        <tr>
+            <td>2024-04-02</td>
+            <td>Capacity 30%</td>
+           
+        </tr>
+        <tr>
+            <td>2024-04-01</td>
+            <td>Capacity 90%</td>
+           
+        </tr>
+        <tr>
+            <td>2024-04-02</td>
+            <td>Capacity 100%</td>
+          
+        </tr>
+    </tbody>
+</table>
+
+</asp:Content>

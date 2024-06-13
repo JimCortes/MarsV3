@@ -11,7 +11,7 @@ namespace MarsV3
 {
 
 
-    public partial class Light
+    public partial class air
     {
     }
 }

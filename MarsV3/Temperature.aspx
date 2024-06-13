@@ -1,59 +1,70 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Temperature.aspx.cs" Inherits="MarsV3.Temperature" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dash.Master" AutoEventWireup="true" CodeBehind="Temperature.aspx.cs" Inherits="MarsV3.Temperature" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+            <nav>
+    <div class="nav-wrapper green darken-3">
+        <a href="Login.aspx" class="brand-logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="Login.aspx">log out</a></li>
+        </ul>
+    </div>
+</nav>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-<!DOCTYPE html>
+     <div class="container">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-                <link rel="stylesheet" type="text/css" href="css/style.css">
 
-</head>
-<body>
-    <form id="form1" runat="server">
-                          <nav class="sticky-nav">
-      <ul>
-          <li><a href="Dashboard.aspx">Dashboard</a></li>
-          <li><a href="AirQuality.aspx">Air Quality</a></li>
-          <li><a href="Temperature.aspx">Temperature</a></li>
-          <li><a href="Light.aspx">Light</a></li>
-          <li><a href="Humidity.aspx">Humidity</a></li>
-          <li><a href="Moisture.aspx">Moisture</a></li>
-          <li><a href="SolarPanel.aspx">Solar Panel</a></li>
-          <li><a href="Settings.aspx">Settings</a></li>
-            <li><a href="Login.aspx">Logout</a></li>
-      </ul>
-  </nav>
-                <div id="content">
+     <div class="col s12 m3 l4">
+         <div class="card center-align">
+             <div class="card-content">
+                 <div class="center-align">
+                 <span class="card-title green-text">Temperatue</span>
+                 <span class="blue-text text-darken-2">15c</span>
+                 </div>
+             </div>
+         </div>
+     </div>
+ 
+ 
+ <div class="col s12" style="margin-top: 20px;">
+ <table>
+     <thead>
+         <tr>
+             <th>Date</th>
+             <th>Temperatue</th>
+             
+         </tr>
+     </thead>
+
+     <tbody>
+         <tr>
+             <td>2024-04-01</td>
+             <td>15c</td>
+             
+         </tr>
+         <tr>
+             <td>2024-04-01</td>
+             <td>18c</td>
+             
+         </tr>
+         <tr>
+             <td>2024-04-02</td>
+             <td>19c</td>
             
-            <center>
-        
- <div class="card">
-    <div class="card-header">
-        <asp:Label ID="Label1" runat="server" Text="Temperature"></asp:Label>
-    </div>
-    <div class="card-body">
-        <asp:Label ID="Label2" runat="server" Text="38C"></asp:Label>
-    </div>
-</div>
-
-            </center>
-
-    
-            <div>
-            <br />
-            <center>
-                <asp:Table ID="History" runat="server" Style="margin: 3px; border-width: 1px; width: 700px; border-style: solid; border-width: 1px;">
-                    <asp:TableHeaderRow>
-                        <asp:TableHeaderCell>Date</asp:TableHeaderCell>
-                        <asp:TableHeaderCell>Value</asp:TableHeaderCell>
-                    </asp:TableHeaderRow>
-                </asp:Table>
-
-            </center>
-        </div>
-    
-    </div>
-    
-    </form>
-</body>
-</html>
+         </tr>
+         <tr>
+             <td>2024-04-01</td>
+             <td>12c</td>
+            
+         </tr>
+         <tr>
+             <td>2024-04-02</td>
+             <td>15c</td>
+           
+         </tr>
+     </tbody>
+ </table>
+</asp:Content>
