@@ -37,7 +37,7 @@
             <li><a href="<%= GetRouteUrl("Humidity", null) %>"><i class="material-icons">water_drop</i>Humidity</a></li>
             <li><a href="<%= GetRouteUrl("Moisture", null) %>"><i class="material-icons">grass</i>Moisture</a></li>
             <li><a href="<%= GetRouteUrl("SolarPanel", null) %>"><i class="material-icons">solar_power</i>Solar Panel</a></li>
-            <li><a href="<%= GetRouteUrl("Settings", null) %>"><i class="material-icons">settings</i>Settings</a></li>
+    
        
             
         </ul>
