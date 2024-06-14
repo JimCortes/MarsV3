@@ -17,11 +17,6 @@
         <div class="container">
 
 
-    <div class="col s12 m3 l4">
-        <div class="card center-align">
-            <div class="card-content">
-                <div class="center-align">
-                <span class="card-title green-text">Light</span>
                 <span class="blue-text text-darken-2">Good </span>
                 </div>
             </div>
